@@ -171,10 +171,10 @@ Each task is atomic and has corresponding unit tests.
   - Test: widget is scrollable
 
 ### 5.2 Topic Card Widget
-- [ ] **5.2.1** Create `lib/features/slides/presentation/widgets/topic_card.dart`
+- [x] **5.2.1** Create `lib/features/slides/presentation/widgets/topic_card.dart`
   - Display topic name and description
   - Tappable with onTap callback
-- [ ] **5.2.2** Create `test/features/slides/presentation/widgets/topic_card_test.dart`
+- [x] **5.2.2** Create `test/features/slides/presentation/widgets/topic_card_test.dart`
   - Test: displays topic name
   - Test: onTap callback is triggered
 
