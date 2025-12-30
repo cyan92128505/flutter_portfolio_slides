@@ -50,10 +50,10 @@ Each task is atomic and has corresponding unit tests.
   - Test: fromRouteName throws for invalid route
 
 ### 1.2 Slide Entity
-- [ ] **1.2.1** Create `lib/features/slides/domain/entities/slide.dart`
+- [x] **1.2.1** Create `lib/features/slides/domain/entities/slide.dart`
   - Define Slide class with: topic, pageIndex, title, content, codeSnippet (optional)
   - Implement equality (extend Equatable or override ==)
-- [ ] **1.2.2** Create `test/features/slides/domain/entities/slide_test.dart`
+- [x] **1.2.2** Create `test/features/slides/domain/entities/slide_test.dart`
   - Test: Slide creation with all fields
   - Test: Slide creation without codeSnippet
   - Test: Slide equality comparison
