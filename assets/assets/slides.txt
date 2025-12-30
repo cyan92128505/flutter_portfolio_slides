@@ -49,16 +49,6 @@ My AI-assisted workflow:
 
 ---
 
-## Real Project: Travel Agency System
-
-Document tagging system built with AI:
-
-- Stack: Flutter + Node.js serverless + Firebase
-- Timeline: 3 weeks (vs estimated 8 weeks)
-- AI helped with: boilerplate, edge cases, testing
-
----
-
 ## When AI Helps vs Human Judgment
 
 **AI excels at:**
