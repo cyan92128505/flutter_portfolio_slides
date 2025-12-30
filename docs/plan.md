@@ -146,12 +146,12 @@ Each task is atomic and has corresponding unit tests.
 ## Phase 4: Presentation Layer - Router
 
 ### 4.1 App Router
-- [ ] **4.1.1** Create `lib/core/router.dart`
+- [x] **4.1.1** Create `lib/core/router.dart`
   - Define GoRouter with routes:
     - `/` -> HomePage
     - `/slides/:topic` -> SlidePage
   - Add redirect for invalid topic routes
-- [ ] **4.1.2** Create `test/core/router_test.dart`
+- [x] **4.1.2** Create `test/core/router_test.dart`
   - Test: root route navigates to HomePage
   - Test: /slides/ai-tools navigates to SlidePage with correct topic
   - Test: /slides/invalid redirects to home or shows error
