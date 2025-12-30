@@ -7153,7 +7153,7 @@ akP(){var s=0,r=A.U(t.U2),q,p=2,o=[],n,m,l,k
 var $async$akP=A.V(function(a,b){if(a===1){o.push(b)
 s=p}for(;;)switch(s){case 0:p=4
 s=7
-return A.Z($.UU().ahb("assets/slides.md"),$async$akP)
+return A.Z($.UU().ahb("assets/slides.txt"),$async$akP)
 case 7:n=b
 m=A.aER(n)
 q=new A.zP(m)
