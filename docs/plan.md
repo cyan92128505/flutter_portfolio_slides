@@ -190,11 +190,11 @@ Each task is atomic and has corresponding unit tests.
   - Test: button callbacks are triggered
 
 ### 5.4 Slide Content Widget
-- [ ] **5.4.1** Create `lib/features/slides/presentation/widgets/slide_content.dart`
+- [x] **5.4.1** Create `lib/features/slides/presentation/widgets/slide_content.dart`
   - Display slide title
   - Display slide content (markdown or plain text)
   - Display code block if present
-- [ ] **5.4.2** Create `test/features/slides/presentation/widgets/slide_content_test.dart`
+- [x] **5.4.2** Create `test/features/slides/presentation/widgets/slide_content_test.dart`
   - Test: displays title
   - Test: displays content
   - Test: displays code block when present
