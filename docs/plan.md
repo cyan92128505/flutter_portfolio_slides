@@ -98,13 +98,13 @@ Each task is atomic and has corresponding unit tests.
 ## Phase 3: Presentation Layer - BLoC
 
 ### 3.1 Slides Event
-- [ ] **3.1.1** Create `lib/features/slides/presentation/bloc/slides_event.dart`
+- [x] **3.1.1** Create `lib/features/slides/presentation/bloc/slides_event.dart`
   - Define abstract SlidesEvent (extends Equatable)
   - Define LoadSlides event (with Topic parameter)
   - Define NextSlide event
   - Define PreviousSlide event
   - Define GoToSlide event (with int pageIndex)
-- [ ] **3.1.2** Create `test/features/slides/presentation/bloc/slides_event_test.dart`
+- [x] **3.1.2** Create `test/features/slides/presentation/bloc/slides_event_test.dart`
   - Test: LoadSlides equality
   - Test: GoToSlide equality
   - Test: NextSlide and PreviousSlide are singletons or equal
