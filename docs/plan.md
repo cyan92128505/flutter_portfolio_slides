@@ -82,10 +82,10 @@ Each task is atomic and has corresponding unit tests.
   - Test: all slides have valid topic reference
 
 ### 2.2 Slides Repository Implementation
-- [ ] **2.2.1** Create `lib/features/slides/data/repositories/slides_repository_impl.dart`
+- [x] **2.2.1** Create `lib/features/slides/data/repositories/slides_repository_impl.dart`
   - Implement SlidesRepository interface
   - Use slidesData as data source
-- [ ] **2.2.2** Create `test/features/slides/data/repositories/slides_repository_impl_test.dart`
+- [x] **2.2.2** Create `test/features/slides/data/repositories/slides_repository_impl_test.dart`
   - Test: getSlidesByTopic returns correct slides
   - Test: getSlidesByTopic returns empty list for topic with no slides
   - Test: getSlide returns correct slide
