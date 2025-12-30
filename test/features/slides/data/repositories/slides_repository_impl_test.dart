@@ -100,13 +100,4 @@ void main() {
       });
     });
   });
-
-  group('SlidesRepositoryImpl with default data', () {
-    test('uses slidesData when no data provided', () {
-      final repository = SlidesRepositoryImpl();
-
-      final slides = repository.getSlidesByTopic(Topic.aiTools);
-      expect(slides, isNotEmpty);
-    });
-  });
 }

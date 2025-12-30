@@ -1,11 +1,9 @@
-import 'package:app/features/slides/data/data.dart';
 import 'package:app/features/slides/domain/domain.dart';
 
 class SlidesRepositoryImpl implements SlidesRepository {
   final Map<Topic, List<Slide>> _data;
 
-  SlidesRepositoryImpl({Map<Topic, List<Slide>>? data})
-    : _data = data ?? slidesData;
+  SlidesRepositoryImpl({required Map<Topic, List<Slide>> data}) : _data = data;
 
   @override
   List<Slide> getSlidesByTopic(Topic topic) {
