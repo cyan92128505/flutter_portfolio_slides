@@ -346,14 +346,14 @@ App:
 
 ```bash
 # Run all tests
-flutter test
+fvm flutter test
 
 # Run specific test file
-flutter test test/features/slides/domain/entities/topic_test.dart
+fvm flutter test test/features/slides/domain/entities/topic_test.dart
 
 # Run tests with coverage
-flutter test --coverage
+fvm flutter test --coverage
 
 # Run tests in watch mode (with build_runner)
-flutter pub run build_runner watch
+fvm flutter pub run build_runner watch
 ```
