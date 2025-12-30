@@ -23,27 +23,27 @@ Each task is atomic and has corresponding unit tests.
 - [x] **0.1.5** Run fvm flutter pub get
 
 ### 0.2 Directory Structure
-- [ ] **0.2.1** Create lib/core/
-- [ ] **0.2.2** Create lib/features/slides/domain/entities/
-- [ ] **0.2.3** Create lib/features/slides/data/
-- [ ] **0.2.4** Create lib/features/slides/presentation/bloc/
-- [ ] **0.2.5** Create lib/features/slides/presentation/pages/
-- [ ] **0.2.6** Create lib/features/slides/presentation/widgets/
-- [ ] **0.2.7** Create test/features/slides/domain/
-- [ ] **0.2.8** Create test/features/slides/data/
-- [ ] **0.2.9** Create test/features/slides/presentation/bloc/
+- [x] **0.2.1** Create lib/core/
+- [x] **0.2.2** Create lib/features/slides/domain/entities/
+- [x] **0.2.3** Create lib/features/slides/data/
+- [x] **0.2.4** Create lib/features/slides/presentation/bloc/
+- [x] **0.2.5** Create lib/features/slides/presentation/pages/
+- [x] **0.2.6** Create lib/features/slides/presentation/widgets/
+- [x] **0.2.7** Create test/features/slides/domain/
+- [x] **0.2.8** Create test/features/slides/data/
+- [x] **0.2.9** Create test/features/slides/presentation/bloc/
 
 ---
 
 ## Phase 1: Domain Layer (No Dependencies)
 
 ### 1.1 Topic Enum
-- [ ] **1.1.1** Create `lib/features/slides/domain/entities/topic.dart`
+- [x] **1.1.1** Create `lib/features/slides/domain/entities/topic.dart`
   - Define Topic enum with 7 values
   - Add `routeName` getter (e.g., 'ai-tools')
   - Add `displayName` getter (e.g., 'AI Tools Usage')
   - Add `fromRouteName` factory
-- [ ] **1.1.2** Create `test/features/slides/domain/entities/topic_test.dart`
+- [x] **1.1.2** Create `test/features/slides/domain/entities/topic_test.dart`
   - Test: each topic has correct routeName
   - Test: each topic has correct displayName
   - Test: fromRouteName returns correct topic
