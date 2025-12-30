@@ -161,11 +161,11 @@ Each task is atomic and has corresponding unit tests.
 ## Phase 5: Presentation Layer - Widgets
 
 ### 5.1 Code Block Widget
-- [ ] **5.1.1** Create `lib/features/slides/presentation/widgets/code_block.dart`
+- [x] **5.1.1** Create `lib/features/slides/presentation/widgets/code_block.dart`
   - Display code with syntax highlighting
   - Support language parameter (dart, yaml, etc.)
   - Scrollable for long code
-- [ ] **5.1.2** Create `test/features/slides/presentation/widgets/code_block_test.dart`
+- [x] **5.1.2** Create `test/features/slides/presentation/widgets/code_block_test.dart`
   - Test: widget renders code text
   - Test: widget handles empty code
   - Test: widget is scrollable
