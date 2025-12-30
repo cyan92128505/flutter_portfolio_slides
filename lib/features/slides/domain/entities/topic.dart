@@ -53,4 +53,13 @@ enum Topic {
     }
     throw ArgumentError('Invalid route name: $routeName');
   }
+
+  static Topic fromDisplayName(String displayName) {
+    for (final topic in Topic.values) {
+      if (topic.displayName == displayName) {
+        return topic;
+      }
+    }
+    throw ArgumentError('Invalid display name: $displayName');
+  }
 }

@@ -102,6 +102,49 @@ void main() {
       });
     });
 
+    group('fromDisplayName', () {
+      test('returns correct topic for AI Tools Usage', () {
+        expect(Topic.fromDisplayName('AI Tools Usage'), Topic.aiTools);
+      });
+
+      test('returns correct topic for Flutter Lifecycle + Clean Architecture', () {
+        expect(
+          Topic.fromDisplayName('Flutter Lifecycle + Clean Architecture'),
+          Topic.flutterLifecycle,
+        );
+      });
+
+      test('returns correct topic for SOLID Principles', () {
+        expect(Topic.fromDisplayName('SOLID Principles'), Topic.solid);
+      });
+
+      test('returns correct topic for BLoC Pattern', () {
+        expect(Topic.fromDisplayName('BLoC Pattern'), Topic.bloc);
+      });
+
+      test('returns correct topic for go_router', () {
+        expect(Topic.fromDisplayName('go_router'), Topic.goRouter);
+      });
+
+      test('returns correct topic for RESTful API Integration', () {
+        expect(
+          Topic.fromDisplayName('RESTful API Integration'),
+          Topic.restfulApi,
+        );
+      });
+
+      test('returns correct topic for GitHub Flow', () {
+        expect(Topic.fromDisplayName('GitHub Flow'), Topic.githubFlow);
+      });
+
+      test('throws ArgumentError for invalid display name', () {
+        expect(
+          () => Topic.fromDisplayName('Invalid Topic'),
+          throwsA(isA<ArgumentError>()),
+        );
+      });
+    });
+
     test('has exactly 7 topics', () {
       expect(Topic.values.length, 7);
     });
