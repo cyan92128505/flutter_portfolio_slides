@@ -110,11 +110,11 @@ Each task is atomic and has corresponding unit tests.
   - Test: NextSlide and PreviousSlide are singletons or equal
 
 ### 3.2 Slides State
-- [ ] **3.2.1** Create `lib/features/slides/presentation/bloc/slides_state.dart`
+- [x] **3.2.1** Create `lib/features/slides/presentation/bloc/slides_state.dart`
   - Define SlidesState (extends Equatable)
   - Fields: topic, slides, currentIndex, status (loading/loaded/error)
   - Getters: currentSlide, hasNext, hasPrevious, totalSlides
-- [ ] **3.2.2** Create `test/features/slides/presentation/bloc/slides_state_test.dart`
+- [x] **3.2.2** Create `test/features/slides/presentation/bloc/slides_state_test.dart`
   - Test: initial state values
   - Test: currentSlide returns correct slide
   - Test: hasNext returns true when not at last slide
