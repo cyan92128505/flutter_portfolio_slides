@@ -1,4 +1,3 @@
-import 'package:app/features/slides/data/data.dart';
 import 'package:app/features/slides/domain/domain.dart';
 import 'package:app/features/slides/presentation/presentation.dart';
 import 'package:flutter/material.dart';
@@ -13,10 +12,10 @@ class SlidePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final repository = context.read<SlidesRepository>();
     return BlocProvider(
       create: (context) =>
-          SlidesBloc(repository: SlidesRepositoryImpl())
-            ..add(LoadSlides(topic)),
+          SlidesBloc(repository: repository)..add(LoadSlides(topic)),
       child: _SlidePageContent(topic: topic),
     );
   }
