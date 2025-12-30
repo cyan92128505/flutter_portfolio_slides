@@ -31,6 +31,16 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Routing
+  go_router: ^14.6.2
+
+  # State management
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+
+  # Code syntax highlighting
+  flutter_highlight: ^0.7.0
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
@@ -38,6 +48,9 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  # BLoC testing
+  bloc_test: ^9.1.7
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

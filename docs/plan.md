@@ -16,11 +16,11 @@ Each task is atomic and has corresponding unit tests.
 ## Phase 0: Project Setup
 
 ### 0.1 Dependencies
-- [ ] **0.1.1** Update pubspec.yaml with go_router
-- [ ] **0.1.2** Update pubspec.yaml with flutter_bloc
-- [ ] **0.1.3** Update pubspec.yaml with flutter_highlight
-- [ ] **0.1.4** Update pubspec.yaml with equatable (for bloc states)
-- [ ] **0.1.5** Run fvm flutter pub get
+- [x] **0.1.1** Update pubspec.yaml with go_router
+- [x] **0.1.2** Update pubspec.yaml with flutter_bloc
+- [x] **0.1.3** Update pubspec.yaml with flutter_highlight
+- [x] **0.1.4** Update pubspec.yaml with equatable (for bloc states)
+- [x] **0.1.5** Run fvm flutter pub get
 
 ### 0.2 Directory Structure
 - [ ] **0.2.1** Create lib/core/
