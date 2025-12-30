@@ -73,10 +73,10 @@ Each task is atomic and has corresponding unit tests.
 ## Phase 2: Data Layer
 
 ### 2.1 Slides Data (Static Content)
-- [ ] **2.1.1** Create `lib/features/slides/data/slides_data.dart`
+- [x] **2.1.1** Create `lib/features/slides/data/slides_data.dart`
   - Define slidesData as Map<Topic, List<Slide>>
   - Add placeholder content for all 7 topics (1-2 slides each initially)
-- [ ] **2.1.2** Create `test/features/slides/data/slides_data_test.dart`
+- [x] **2.1.2** Create `test/features/slides/data/slides_data_test.dart`
   - Test: slidesData contains all 7 topics
   - Test: each topic has at least 1 slide
   - Test: all slides have valid topic reference
