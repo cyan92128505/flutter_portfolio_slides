@@ -38,13 +38,10 @@ void main() {
           ),
         ),
       );
-
-      final prevButton = find.byIcon(Icons.arrow_back);
-      expect(prevButton, findsOneWidget);
-
-      final iconButton =
-          tester.widget<IconButton>(find.widgetWithIcon(IconButton, Icons.arrow_back));
-      expect(iconButton.onPressed, isNull);
+      final prevButton = tester.widget<FilledButton>(
+        find.byKey(Key('SlideNavigationPrevButton')),
+      );
+      expect(prevButton.onPressed, isNull);
     });
 
     testWidgets('next button is disabled at last slide', (tester) async {
@@ -63,9 +60,10 @@ void main() {
         ),
       );
 
-      final iconButton =
-          tester.widget<IconButton>(find.widgetWithIcon(IconButton, Icons.arrow_forward));
-      expect(iconButton.onPressed, isNull);
+      final nextButton = tester.widget<FilledButton>(
+        find.byKey(Key('SlideNavigationNextButton')),
+      );
+      expect(nextButton.onPressed, isNull);
     });
 
     testWidgets('onPrevious callback is triggered', (tester) async {

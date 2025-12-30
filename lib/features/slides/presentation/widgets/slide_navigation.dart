@@ -20,34 +20,46 @@ class SlideNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = Theme.of(context).colorScheme;
+
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.surface,
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 4,
-            offset: const Offset(0, -2),
-          ),
-        ],
+        color: colorScheme.surfaceContainerLow,
+        border: Border(
+          top: BorderSide(color: colorScheme.outlineVariant, width: 1),
+        ),
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          IconButton(
+          FilledButton.tonalIcon(
+            key: const Key('SlideNavigationPrevButton'),
             icon: const Icon(Icons.arrow_back),
+            label: const Text('Prev'),
             onPressed: hasPrevious ? onPrevious : null,
-            tooltip: 'Previous (Left Arrow)',
           ),
-          Text(
-            '${currentIndex + 1} / $totalSlides',
-            style: Theme.of(context).textTheme.titleMedium,
+          const SizedBox(width: 24),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(
+              color: colorScheme.primaryContainer,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Text(
+              '${currentIndex + 1} / $totalSlides',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                color: colorScheme.onPrimaryContainer,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
           ),
-          IconButton(
+          const SizedBox(width: 24),
+          FilledButton.tonalIcon(
+            key: const Key('SlideNavigationNextButton'),
             icon: const Icon(Icons.arrow_forward),
+            label: const Text('Next'),
             onPressed: hasNext ? onNext : null,
-            tooltip: 'Next (Right Arrow)',
           ),
         ],
       ),

@@ -21,10 +21,18 @@ class SlidePage extends StatelessWidget {
   }
 }
 
-class _SlidePageContent extends StatelessWidget {
+class _SlidePageContent extends StatefulWidget {
   final Topic topic;
 
   const _SlidePageContent({required this.topic});
+
+  @override
+  State<_SlidePageContent> createState() => _SlidePageContentState();
+}
+
+class _SlidePageContentState extends State<_SlidePageContent> {
+  int _previousIndex = 0;
+  bool _isForward = true;
 
   @override
   Widget build(BuildContext context) {
@@ -43,13 +51,19 @@ class _SlidePageContent extends StatelessWidget {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text(topic.displayName),
+          title: Text(widget.topic.displayName),
           leading: IconButton(
             icon: const Icon(Icons.home),
             onPressed: () => context.go('/'),
           ),
         ),
-        body: BlocBuilder<SlidesBloc, SlidesState>(
+        body: BlocConsumer<SlidesBloc, SlidesState>(
+          listener: (context, state) {
+            if (state.currentIndex != _previousIndex) {
+              _isForward = state.currentIndex > _previousIndex;
+              _previousIndex = state.currentIndex;
+            }
+          },
           builder: (context, state) {
             if (state.status == SlidesStatus.loading) {
               return const Center(child: CircularProgressIndicator());
@@ -64,6 +78,19 @@ class _SlidePageContent extends StatelessWidget {
                 Expanded(
                   child: AnimatedSwitcher(
                     duration: const Duration(milliseconds: 300),
+                    transitionBuilder: (child, animation) {
+                      final offsetAnimation = Tween<Offset>(
+                        begin: Offset(_isForward ? 1.0 : -1.0, 0.0),
+                        end: Offset.zero,
+                      ).animate(CurvedAnimation(
+                        parent: animation,
+                        curve: Curves.easeInOut,
+                      ));
+                      return SlideTransition(
+                        position: offsetAnimation,
+                        child: child,
+                      );
+                    },
                     child: SlideContent(
                       key: ValueKey(state.currentIndex),
                       slide: state.currentSlide!,

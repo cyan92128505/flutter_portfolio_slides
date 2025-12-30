@@ -277,9 +277,9 @@ Each task is atomic and has corresponding unit tests.
 ## Phase 9: Polish and Deploy
 
 ### 9.1 UI Polish
-- [ ] **9.1.1** Add transition animations between slides
-- [ ] **9.1.2** Responsive layout for web/mobile
-- [ ] **9.1.3** Theme and styling refinement
+- [x] **9.1.1** Add transition animations between slides
+- [x] **9.1.2** Responsive layout for web/mobile
+- [x] **9.1.3** Theme and styling refinement
 
 ### 9.2 GitHub Pages Deployment
 - [ ] **9.2.1** Configure web build for GitHub Pages
