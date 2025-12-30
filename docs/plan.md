@@ -205,11 +205,11 @@ Each task is atomic and has corresponding unit tests.
 ## Phase 6: Presentation Layer - Pages
 
 ### 6.1 Home Page
-- [ ] **6.1.1** Create `lib/features/slides/presentation/pages/home_page.dart`
+- [x] **6.1.1** Create `lib/features/slides/presentation/pages/home_page.dart`
   - Display title "Flutter Portfolio"
   - List all 7 topics as TopicCards
   - Navigate to SlidePage on tap
-- [ ] **6.1.2** Create `test/features/slides/presentation/pages/home_page_test.dart`
+- [x] **6.1.2** Create `test/features/slides/presentation/pages/home_page_test.dart`
   - Test: displays all 7 topics
   - Test: tapping topic navigates to correct route
 
