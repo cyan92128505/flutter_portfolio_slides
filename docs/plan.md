@@ -60,13 +60,13 @@ Each task is atomic and has corresponding unit tests.
   - Test: Slide inequality when different
 
 ### 1.3 Slides Repository Interface
-- [ ] **1.3.1** Create `lib/features/slides/domain/repositories/slides_repository.dart`
+- [x] **1.3.1** Create `lib/features/slides/domain/repositories/slides_repository.dart`
   - Define abstract SlidesRepository
   - Method: List<Slide> getSlidesByTopic(Topic topic)
   - Method: Slide? getSlide(Topic topic, int pageIndex)
   - Method: int getSlideCount(Topic topic)
   - Method: List<Topic> getAllTopics()
-- [ ] **1.3.2** No unit test needed (interface only)
+- [x] **1.3.2** No unit test needed (interface only)
 
 ---
 
