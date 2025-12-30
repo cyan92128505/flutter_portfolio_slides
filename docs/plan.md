@@ -179,11 +179,11 @@ Each task is atomic and has corresponding unit tests.
   - Test: onTap callback is triggered
 
 ### 5.3 Slide Navigation Widget
-- [ ] **5.3.1** Create `lib/features/slides/presentation/widgets/slide_navigation.dart`
+- [x] **5.3.1** Create `lib/features/slides/presentation/widgets/slide_navigation.dart`
   - Previous/Next buttons
   - Page indicator (e.g., "3 / 10")
   - Disable buttons at boundaries
-- [ ] **5.3.2** Create `test/features/slides/presentation/widgets/slide_navigation_test.dart`
+- [x] **5.3.2** Create `test/features/slides/presentation/widgets/slide_navigation_test.dart`
   - Test: displays correct page indicator
   - Test: previous button disabled at first slide
   - Test: next button disabled at last slide
