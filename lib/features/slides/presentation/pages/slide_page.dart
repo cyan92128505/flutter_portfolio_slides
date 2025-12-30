@@ -1,14 +1,10 @@
+import 'package:app/features/slides/data/data.dart';
+import 'package:app/features/slides/domain/domain.dart';
+import 'package:app/features/slides/presentation/presentation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import '../../data/repositories/slides_repository_impl.dart';
-import '../../domain/entities/topic.dart';
-import '../bloc/slides_bloc.dart';
-import '../bloc/slides_event.dart';
-import '../bloc/slides_state.dart';
-import '../widgets/slide_content.dart';
-import '../widgets/slide_navigation.dart';
 
 class SlidePage extends StatelessWidget {
   final Topic topic;
@@ -18,8 +14,9 @@ class SlidePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => SlidesBloc(repository: SlidesRepositoryImpl())
-        ..add(LoadSlides(topic)),
+      create: (context) =>
+          SlidesBloc(repository: SlidesRepositoryImpl())
+            ..add(LoadSlides(topic)),
       child: _SlidePageContent(topic: topic),
     );
   }

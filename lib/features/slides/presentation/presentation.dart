@@ -1,0 +1,9 @@
+export 'package:app/features/slides/presentation/widgets/topic_card.dart';
+export 'package:app/features/slides/presentation/widgets/slide_navigation.dart';
+export 'package:app/features/slides/presentation/widgets/code_block.dart';
+export 'package:app/features/slides/presentation/widgets/slide_content.dart';
+export 'package:app/features/slides/presentation/pages/slide_page.dart';
+export 'package:app/features/slides/presentation/pages/home_page.dart';
+export 'package:app/features/slides/presentation/bloc/slides_state.dart';
+export 'package:app/features/slides/presentation/bloc/slides_event.dart';
+export 'package:app/features/slides/presentation/bloc/slides_bloc.dart';

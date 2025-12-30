@@ -1,30 +1,34 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:app/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  group('PortfolioApp', () {
+    testWidgets('builds without error', (tester) async {
+      await tester.pumpWidget(const PortfolioApp());
+      await tester.pumpAndSettle();
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+      expect(find.byType(MaterialApp), findsOneWidget);
+    });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+    testWidgets('shows home page initially', (tester) async {
+      await tester.pumpWidget(const PortfolioApp());
+      await tester.pumpAndSettle();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+      expect(find.text('Flutter Portfolio'), findsOneWidget);
+    });
+
+    testWidgets('displays all 7 topics on home page', (tester) async {
+      await tester.pumpWidget(const PortfolioApp());
+      await tester.pumpAndSettle();
+
+      expect(find.text('AI Tools Usage'), findsOneWidget);
+      expect(find.text('Flutter Lifecycle + Clean Architecture'), findsOneWidget);
+      expect(find.text('SOLID Principles'), findsOneWidget);
+      expect(find.text('BLoC Pattern'), findsOneWidget);
+      expect(find.text('go_router'), findsOneWidget);
+      expect(find.text('RESTful API Integration'), findsOneWidget);
+      expect(find.text('GitHub Flow'), findsOneWidget);
+    });
   });
 }

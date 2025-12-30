@@ -1,5 +1,4 @@
-import '../domain/entities/slide.dart';
-import '../domain/entities/topic.dart';
+import 'package:app/features/slides/domain/domain.dart';
 
 final Map<Topic, List<Slide>> slidesData = {
   Topic.aiTools: [
@@ -7,14 +6,16 @@ final Map<Topic, List<Slide>> slidesData = {
       topic: Topic.aiTools,
       pageIndex: 0,
       title: 'AI Tools Usage',
-      content: 'Tools: Claude, Cursor, Copilot\n\n'
+      content:
+          'Tools: Claude, Cursor, Copilot\n\n'
           'Workflow: Spec-driven development with AI assistance.',
     ),
     const Slide(
       topic: Topic.aiTools,
       pageIndex: 1,
       title: 'Real Project Example',
-      content: 'Travel agency document tagging system\n\n'
+      content:
+          'Travel agency document tagging system\n\n'
           '- Flutter + Node.js serverless + Firebase\n'
           '- Completed in 3 weeks with AI assistance',
     ),
@@ -24,7 +25,8 @@ final Map<Topic, List<Slide>> slidesData = {
       topic: Topic.flutterLifecycle,
       pageIndex: 0,
       title: 'Flutter Widget Lifecycle',
-      content: 'Key lifecycle methods:\n\n'
+      content:
+          'Key lifecycle methods:\n\n'
           '- initState()\n'
           '- didChangeDependencies()\n'
           '- didUpdateWidget()\n'
@@ -34,7 +36,8 @@ final Map<Topic, List<Slide>> slidesData = {
       topic: Topic.flutterLifecycle,
       pageIndex: 1,
       title: 'Clean Architecture Layers',
-      content: 'Three layers:\n\n'
+      content:
+          'Three layers:\n\n'
           '1. Data Layer - API, Database\n'
           '2. Domain Layer - Entities, Use Cases\n'
           '3. Presentation Layer - UI, State Management',
@@ -45,7 +48,8 @@ final Map<Topic, List<Slide>> slidesData = {
       topic: Topic.solid,
       pageIndex: 0,
       title: 'SOLID Principles',
-      content: 'Focus on SRP and DIP:\n\n'
+      content:
+          'Focus on SRP and DIP:\n\n'
           '- Single Responsibility Principle\n'
           '- Dependency Inversion Principle',
     ),
@@ -53,7 +57,8 @@ final Map<Topic, List<Slide>> slidesData = {
       topic: Topic.solid,
       pageIndex: 1,
       title: 'Dependency Inversion',
-      content: 'High-level modules should not depend on low-level modules.\n\n'
+      content:
+          'High-level modules should not depend on low-level modules.\n\n'
           'Both should depend on abstractions.',
       codeSnippet: '''abstract class Repository {
   Future<User> getUser(String id);
@@ -71,14 +76,16 @@ class UserBloc {
       topic: Topic.bloc,
       pageIndex: 0,
       title: 'BLoC Pattern',
-      content: 'Event -> BLoC -> State\n\n'
+      content:
+          'Event -> BLoC -> State\n\n'
           'Unidirectional data flow with streams.',
     ),
     const Slide(
       topic: Topic.bloc,
       pageIndex: 1,
       title: 'Stream Concept',
-      content: 'BLoC uses StreamController internally.\n\n'
+      content:
+          'BLoC uses StreamController internally.\n\n'
           'Events in, States out.',
       codeSnippet: '''class CounterBloc extends Bloc<CounterEvent, int> {
   CounterBloc() : super(0) {
@@ -94,7 +101,8 @@ class UserBloc {
       topic: Topic.goRouter,
       pageIndex: 0,
       title: 'go_router',
-      content: 'Declarative routing for Flutter.\n\n'
+      content:
+          'Declarative routing for Flutter.\n\n'
           '- Deep linking support\n'
           '- Type-safe routes\n'
           '- Redirect and guards',
@@ -127,7 +135,8 @@ class UserBloc {
       topic: Topic.restfulApi,
       pageIndex: 0,
       title: 'RESTful API Integration',
-      content: 'Repository pattern for API layer.\n\n'
+      content:
+          'Repository pattern for API layer.\n\n'
           '- Dio for HTTP client\n'
           '- Interceptors for auth/logging\n'
           '- Error handling strategy',
@@ -136,7 +145,8 @@ class UserBloc {
       topic: Topic.restfulApi,
       pageIndex: 1,
       title: 'Token Refresh Flow',
-      content: 'Handle 401 errors with token refresh.\n\n'
+      content:
+          'Handle 401 errors with token refresh.\n\n'
           'Interceptor catches error, refreshes token, retries request.',
     ),
   ],
@@ -145,7 +155,8 @@ class UserBloc {
       topic: Topic.githubFlow,
       pageIndex: 0,
       title: 'GitHub Flow',
-      content: 'Simple branching model:\n\n'
+      content:
+          'Simple branching model:\n\n'
           '1. Create feature branch\n'
           '2. Make changes\n'
           '3. Open Pull Request\n'
@@ -155,7 +166,8 @@ class UserBloc {
       topic: Topic.githubFlow,
       pageIndex: 1,
       title: 'vs Git Flow',
-      content: 'GitHub Flow is simpler:\n\n'
+      content:
+          'GitHub Flow is simpler:\n\n'
           '- No develop branch\n'
           '- No release branches\n'
           '- Main is always deployable',

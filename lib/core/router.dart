@@ -1,8 +1,7 @@
+import 'package:app/features/slides/domain/domain.dart';
+import 'package:app/features/slides/presentation/presentation.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import '../features/slides/domain/entities/topic.dart';
-import '../features/slides/presentation/pages/home_page.dart';
-import '../features/slides/presentation/pages/slide_page.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/',

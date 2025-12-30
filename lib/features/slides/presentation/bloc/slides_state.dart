@@ -1,6 +1,5 @@
+import 'package:app/features/slides/domain/domain.dart';
 import 'package:equatable/equatable.dart';
-import '../../domain/entities/slide.dart';
-import '../../domain/entities/topic.dart';
 
 enum SlidesStatus { initial, loading, loaded, error }
 
@@ -50,10 +49,10 @@ class SlidesState extends Equatable {
 
   @override
   List<Object?> get props => [
-        topic,
-        slides,
-        currentIndex,
-        status,
-        errorMessage,
-      ];
+    topic,
+    slides,
+    currentIndex,
+    status,
+    errorMessage,
+  ];
 }

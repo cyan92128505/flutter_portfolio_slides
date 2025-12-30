@@ -1,5 +1,4 @@
-import '../entities/slide.dart';
-import '../entities/topic.dart';
+import 'package:app/features/slides/domain/domain.dart';
 
 abstract class SlidesRepository {
   List<Slide> getSlidesByTopic(Topic topic);

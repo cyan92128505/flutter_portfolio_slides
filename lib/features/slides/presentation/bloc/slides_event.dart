@@ -1,5 +1,5 @@
+import 'package:app/features/slides/domain/domain.dart';
 import 'package:equatable/equatable.dart';
-import '../../domain/entities/topic.dart';
 
 abstract class SlidesEvent extends Equatable {
   const SlidesEvent();
