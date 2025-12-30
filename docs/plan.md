@@ -214,14 +214,14 @@ Each task is atomic and has corresponding unit tests.
   - Test: tapping topic navigates to correct route
 
 ### 6.2 Slide Page
-- [ ] **6.2.1** Create `lib/features/slides/presentation/pages/slide_page.dart`
+- [x] **6.2.1** Create `lib/features/slides/presentation/pages/slide_page.dart`
   - Receive topic from route parameter
   - Provide SlidesBloc
   - Display SlideContent for current slide
   - Display SlideNavigation
   - Handle keyboard left/right arrows
   - Add slide transition animation
-- [ ] **6.2.2** Create `test/features/slides/presentation/pages/slide_page_test.dart`
+- [x] **6.2.2** Create `test/features/slides/presentation/pages/slide_page_test.dart`
   - Test: displays slide content
   - Test: displays navigation
   - Test: keyboard right arrow goes to next slide
