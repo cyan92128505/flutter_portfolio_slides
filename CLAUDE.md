@@ -75,9 +75,7 @@ lib/
 - Reference: AirlineConnect project (ObjectBox offline architecture)
 
 ### 3. SOLID Principles
-- Focus on SRP and DIP (don't cover all 5 superficially)
-- SRP: How to split classes, single responsibility examples
-- DIP: Dependency injection with get_it or Riverpod
+- Five principles for maintainable code
 - Show real code snippets
 
 ### 4. BLoC Pattern
@@ -85,7 +83,6 @@ lib/
 - Stream and StreamController concept
 - Comparison with Riverpod (event-driven vs provider-based)
 - When to use BLoC vs Riverpod
-- Reference: Used GetX at Anytime project, improved FPS from 30 to 60
 
 ### 5. go_router
 - Route configuration structure

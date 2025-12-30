@@ -1,16 +1,60 @@
-# FLUTTER PORTFOLIO SLIDES
+# Flutter Portfolio Slides
 
-A new Flutter project.
+## Project Goal
 
-## Getting Started
+Build a Flutter App/Web presentation showcasing 7 technical topics for job application.
+This project itself demonstrates: go_router, flutter_bloc, Clean Architecture.
 
-This project is a starting point for a Flutter application.
+## Tech Stack
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter App/Web
+- go_router (routing + deep link)
+- flutter_bloc (state management)
+- flutter_highlight or highlighter (code syntax highlight)
+- Deploy to GitHub Pages on branch page
+- Use FVM
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Architecture
+```
+lib/
+├── core/
+│   └── router.dart
+├── features/
+│   └── slides/
+│       ├── domain/
+│       │   └── entities/slide.dart
+│       ├── data/
+│       │   └── slides_data.dart
+│       └── presentation/
+│           ├── bloc/
+│           │   ├── slides_bloc.dart
+│           │   ├── slides_event.dart
+│           │   └── slides_state.dart
+│           ├── pages/
+│           │   ├── home_page.dart
+│           │   └── slide_page.dart
+│           └── widgets/
+│               └── code_block.dart
+└── main.dart
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Routes
+```
+/                        # Home - table of contents
+/slides/ai-tools         # Topic 1
+/slides/flutter-lifecycle # Topic 2
+/slides/solid            # Topic 3
+/slides/bloc             # Topic 4
+/slides/go-router        # Topic 5
+/slides/restful-api      # Topic 6
+/slides/github-flow      # Topic 7
+```
+
+## Features
+
+- Keyboard left/right arrow to navigate
+- Click to navigate between pages
+- Table of contents with deep link to each topic
+- Each topic has multiple sub-pages
+- Code blocks with syntax highlighting
+- Simple transition animation
