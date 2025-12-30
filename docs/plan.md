@@ -124,13 +124,13 @@ Each task is atomic and has corresponding unit tests.
   - Test: state equality
 
 ### 3.3 Slides BLoC
-- [ ] **3.3.1** Create `lib/features/slides/presentation/bloc/slides_bloc.dart`
+- [x] **3.3.1** Create `lib/features/slides/presentation/bloc/slides_bloc.dart`
   - Inject SlidesRepository
   - Handle LoadSlides: load slides for topic, set currentIndex to 0
   - Handle NextSlide: increment currentIndex if hasNext
   - Handle PreviousSlide: decrement currentIndex if hasPrevious
   - Handle GoToSlide: set currentIndex if valid
-- [ ] **3.3.2** Create `test/features/slides/presentation/bloc/slides_bloc_test.dart`
+- [x] **3.3.2** Create `test/features/slides/presentation/bloc/slides_bloc_test.dart`
   - Test: initial state is correct
   - Test: LoadSlides emits loading then loaded state
   - Test: LoadSlides sets slides and currentIndex to 0
